@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventify</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="bg-primary shadow padding-vertical-large">
+        <h1 class="center color-white text-big font-family-heading">Eventify</h1>
+    </header>
+    <section>
+        <section class="center padding-vertical-x-large">
+            <h1>
+                Complétez votre profil
+            </h1>
+            <h4 class="color-secondary">
+                Pour obtenir des suggestions adaptées
+            </h4>
+        </section>
+        <section class="margin-horizontal-small">
+            
+
+            <form action="" novalidate>
+                <div>
+                    <label class="padding-start-small font-large font-family-content block" for="user_input_email">
+                        Quels sont vos centre d'intérêt ?
+                    </label>
+                    <label class="padding-start-small font-medium font-family-content block color-secondary" for="user_input_email">
+                        Séparez par une virgule pour valider
+                    </label>
+                    <textarea name="user_input_interests" class="block width-full padding-vertical-small bg-secondary border-secondary radius-small" type="text">
+                    </textarea>
+                </div>
+                <div class="padding-top-medium">
+                    <label class="padding-start-small font-large font-family-content block" for="user_input_email">
+                        Présentez vous!
+                    </label>
+                    <label class="padding-start-small font-medium font-family-content block color-secondary" for="user_input_email">
+                        Entrez une courte biographie
+                    </label>
+                    <textarea name="user_input_biography" class="block width-full padding-vertical-small bg-secondary border-secondary radius-small" type="text">
+                    </textarea>
+                </div>
+                <div class="center margin-vertical-medium">
+                    <div class="inline-block round bg-primary w-25 h-25">
+                        &nbsp;
+                    </div>
+                    <div class="inline-block round bg-primary w-25 h-25">
+                        &nbsp;
+                    </div>
+                </div>
+
+                <section>
+                    <div class="">
+                        <input type="checkbox" checked>
+                        Recevoir les notifications lorsque je suis invité à un groupe
+                        </input>
+                    </div>
+                    <div class="">
+                        <input type="checkbox">
+                        Recevoir les notifications lorsqu’un ami accepte une invitation
+                        </input>
+                    </div>
+                    <div class="">
+                        <input type="checkbox" checked>
+                        Recevoir les notifications de messagerie
+                        </input>
+                    </div>
+                </section>
+
+                <button class="block width-full margin-vertical-medium padding-vertical-small radius-small border-secondary color-white bg-btn-secondary">             
+                    <span class="font-medium">
+                        Enregistrer et reprendre plus tard
+                    </span>
+                </button>
+                <button class="block width-full margin-vertical-small padding-vertical-small radius-small border-primary color-white bg-primary">             
+                    <span class="font-medium">
+                        Valider mes informations
+                    </span>
+                </button>
+            </form>
+        </section>
+    </section>
+</body>
+</html>

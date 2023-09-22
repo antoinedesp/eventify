@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Presentation Eventify</title>
+</head>
+<style type="text/css">
+    body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    }
+
+    .fullscreen-container {
+        display: flex;
+        height: 100%;
+        background-color: #3E23E2;
+        color: white;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .left-content {
+        flex: 1;
+        padding-right: 20px;
+    }
+
+    .left-content h1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .left-content p {
+        font-size: 16px;
+        opacity: 0.8;
+    }
+
+    .right-content {
+        flex: 1;
+        overflow: hidden;
+    }
+
+    iframe {
+        height: 100%;
+        width: 100%;
+        max-height: 844px;
+        max-width: 390px;
+        border: none;
+}
+
+    
+</style>
+<body>
+
+
+    <div class="fullscreen-container">
+        <div class="left-content">
+            <h1>Création d'un compte</h1>
+            <p>L'utilisateur peut créer un compte via un email. Il peut aussi créer un compte en utilisant Apple ou Facebook. Un lien lui est présenté pour se connecter à son compte s'il en possède déjà un</p>
+        </div>
+        <div class="right-content">
+            <iframe src="create_account.html"></iframe>
+        </div>
+    </div>
+    <div class="fullscreen-container">
+        <div class="left-content">
+            <h1>Création d'un compte: informations</h1>
+            <p>L'utilisateur doit ici entrer les informations de base (photographie de profil, prénom, location). Il peut enregistrer ses informations et reprendre l'inscription ultérieurement, ou continuer dans la procédure d'inscription.</p>
+        </div>
+        <div class="right-content">
+            <iframe src="create_account_1.html"></iframe>
+        </div>
+    </div>
+    <div class="fullscreen-container">
+        <div class="left-content">
+            <h1>Création d'un compte: détails</h1>
+            <p>Dernière étape d'inscription pour l'utilisateur. Il doit ici lister ses centres d'intérêts via des tags et se présenter à l'aide une courte biographie. Il choisit aussi ses paramètres de notification. Il peut enregistrer ses informations et reprendre l'inscription ultérieurement, ou continuer dans la procédure d'inscription.</p>
+        </div>
+        <div class="right-content">
+            <iframe src="create_account_2.html"></iframe>
+        </div>
+    </div>
+    <div class="fullscreen-container">
+        <div class="left-content">
+            <h1>Identification</h1>
+            <p>L'utilisateur peut ici s'authentifier à l'aide d'une adresse mail. Il peut aussi s'authentifier en utilisant Facebook ou Apple. Un lien lui est présenté pour créer un compte s'il n'en possède pas.</p>
+        </div>
+        <div class="right-content">
+            <iframe src="login_account.html"></iframe>
+        </div>
+    </div>
+    <div class="fullscreen-container">
+        <div class="left-content">
+            <h1>RGPD</h1>
+            <p>Lorsque l'utilisateur accède à l'application pour la première fois, ou en cas de mises à jour du règlement RGPD, il lui est présenté une boîte <i>modal</i> afin qu'il prenne connaissance de ses droits. Il peut refuser et quitter l'application ou accepter. Un lien lui est présenté redirigeant vers une page traitant le sujet de manière plus approfondie.</p>
+        </div>
+        <div class="right-content">
+            <iframe src="onboard_rgpd.html"></iframe>
+        </div>
+    </div>
+    <div class="fullscreen-container">
+        <div class="left-content">
+            <h1>Feed: A venir (état de chargement)</h1>
+            <p>Ce feed d'évenements à venir est affiché lorsque la page est chargée et prête à être affichée mais que le chargement asynchrone des données n'est pas encore finalisé.</p>
+        </div>
+        <div class="right-content">
+            <iframe src="incoming_feed_loading_state.html"></iframe>
+        </div>
+    </div>
+    <div class="fullscreen-container">
+        <div class="left-content">
+            <h1>Feed: A venir (chargé)</h1>
+            <p>Ce feed d'evenement à venir permet de voir les evenements à venir listés par date. Un clic sur un evenement permet d'ouvrir l'evenement en détails.</p>
+        </div>
+        <div class="right-content">
+            <iframe src="incoming_feed.html"></iframe>
+        </div>
+    </div>
+    <div class="fullscreen-container">
+        <div class="left-content">
+            <h1>Feed: Suggestions</h1>
+            <p>Ce feed de suggestions permet de présenter des suggestions d'evenements ou de groupes à l'utilisateur. Un clic sur un evenement ou un groupe permet d'ouvrir l'evenement ou le groupe en détails.</p>
+        </div>
+        <div class="right-content">
+            <iframe src="suggestions_feed.html"></iframe>
+        </div>
+    </div>
+    <div class="fullscreen-container">
+        <div class="left-content">
+            <h1>Evenement: création</h1>
+            <p>Ce formulaire permet de créer un evenement et d'y inviter des amis. Des champs de type text, date, number sont utilisés.</p>
+        </div>
+        <div class="right-content">
+            <iframe src="event_create.html"></iframe>
+        </div>
+    </div>
+    <div class="fullscreen-container">
+        <div class="left-content">
+            <h1>Evenement: détails</h1>
+            <p>Cette vue permet d'afficher les détails d'un evenement, comme son titre, son lieu, sa description, un lien éventuel. Les amis de l'utilisateur participants à l'évenement  sont affichés. Il est possible de participer à l'evenement ou bien de le partager.</p>
+        </div>
+        <div class="right-content">
+            <iframe src="event_details.html"></iframe>
+        </div>
+    </div>
+    <div class="fullscreen-container">
+        <div class="left-content">
+            <h1>Groupe: détails</h1>
+            <p>Cette vue permet d'afficher les détails d'un groupe, comme son titre, son lieu, sa description, un lien éventuel. Les amis de l'utilisateur membres du groupe sont affichés. Il est possible de rejoindre le groupe ou bien de le partager.</p>
+        </div>
+        <div class="right-content">
+            <iframe src="group_details.html"></iframe>
+        </div>
+    </div>
+    <div class="fullscreen-container">
+        <div class="left-content">
+            <h1>Groupe: evenements passés</h1>
+            <p>Les evenements passés organisés par un groupe ou auquel il a participé sont listés ici et triés par date du plus récent au plus ancien.</p>
+        </div>
+        <div class="right-content">
+            <iframe src="group_past_events.html"></iframe>
+        </div>
+    </div>
+    <div class="fullscreen-container">
+        <div class="left-content">
+            <h1>Groupe: evenement à venir</h1>
+            <p>Les evenements à venir organisés par un groupe ou auquel il doit participer sont listés ici et triés par date du plus proche au plus éloigné.</p>
+        </div>
+        <div class="right-content">
+            <iframe src="group_future_events.html"></iframe>
+        </div>
+    </div>
+    <div class="fullscreen-container">
+        <div class="left-content">
+            <h1>Messagerie</h1>
+            <p>L'utilisateur peut ici discuter de manière instantanée avec des membres de groupe ou des groupes.</p>
+        </div>
+        <div class="right-content">
+            <iframe src="messagery_list.html"></iframe>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const fullscreenContainers = document.querySelectorAll(".fullscreen-container");
+        let currentSlide = 0;
+
+        function scrollToSlide(slideIndex) {
+            if (slideIndex >= 0 && slideIndex < fullscreenContainers.length) {
+                const yOffset = fullscreenContainers[slideIndex].offsetTop;
+                window.scrollTo({ top: yOffset, behavior: "smooth" });
+            }
+        }
+
+        function handleScroll(event) {
+            const deltaY = event.deltaY;
+            if (deltaY > 0 && currentSlide < fullscreenContainers.length - 1) {
+                currentSlide++;
+                scrollToSlide(currentSlide);
+            } else if (deltaY < 0 && currentSlide > 0) {
+                currentSlide--;
+                scrollToSlide(currentSlide);
+            }
+        }
+
+        window.addEventListener("wheel", handleScroll);
+    });
+    </script>
+</body>
+</html>

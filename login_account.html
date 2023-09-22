@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventify</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="bg-primary shadow padding-vertical-large">
+        <h1 class="center color-white text-big font-family-heading">Eventify</h1>
+    </header>
+    <section>
+        <section class="center padding-vertical-x-large">
+            <h1>
+                Connectez vous maintenant !
+            </h1>
+            <h4 class="color-secondary">
+                Rejoignez tous vos amis
+            </h4>
+        </section>
+        <section class="margin-horizontal-small">
+            <form action="" novalidate>
+                <div>
+                    <label class="padding-start-small font-large font-family-content block" for="user_input_email">
+                        Email :
+                    </label>
+                    <input name="user_input_email" class="block width-full padding-vertical-small bg-secondary border-secondary" type="text">
+                </div>
+
+                <div class="padding-top-medium">
+                    <label class="padding-start-small font-large font-family-content block" for="user_input_password">
+                        Mot de passe :
+                    </label>
+                    <input name="user_input_password" class="block width-full padding-vertical-small bg-secondary border-secondary" type="password">
+                </div>
+                
+                <button class="block width-full margin-vertical-medium padding-vertical-small radius-small border-primary color-white bg-primary">
+                    <span class="font-large">
+                        Se connecter
+                    </span>
+                </button>
+                
+                <div class="font-small">
+                    Vous n'avez pas de compte ?
+                </div>
+
+                <div class="margin-top-x-small font-small text-align-end color-primary text-underline">
+                    Créez un compte gratuitement
+                </div>
+            </form>
+            <div class="horizontal-text-divider color-secondary font-bold font-xx-small">
+               OU ALORS
+            </div>
+            <button class="radius-small block width-full margin-vertical-medium padding-vertical-small radius-small border-secondary color-white bg-socialbutton-facebook">
+                <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="&#240;&#159;&#166;&#134; icon &#34;facebook&#34;">
+                    <path id="Vector" d="M21.4721 12.2823C21.4721 5.9503 16.8 0.818176 11.0364 0.818176C5.27286 0.818176 0.600769 5.9503 0.600769 12.2823C0.600769 18.0029 4.41707 22.7453 9.40574 23.6051V15.5955H6.75659V12.2814H9.40574V9.7564C9.40574 6.88272 10.9643 5.29588 13.3473 5.29588C14.4892 5.29588 15.6833 5.51944 15.6833 5.51944V8.34057H14.3683C13.0724 8.34057 12.668 9.22427 12.668 10.1309V12.2823H15.5624L15.0997 15.5964H12.668V23.6061C17.6567 22.7462 21.473 18.0039 21.473 12.2823H21.4721Z" fill="white"/>
+                    </g>
+                </svg>                    
+                <span class="font-large">
+                    Se connecter avec Facebook
+                </span>
+            </button>
+            <button class="block width-full margin-vertical-medium padding-vertical-small radius-small border-secondary color-white bg-socialbutton-apple">
+                <svg width="18" height="24" viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="&#240;&#159;&#166;&#134; icon &#34;apple&#34;">
+                    <path id="Vector" d="M4.78054 23.3526C4.37145 23.053 4.00817 22.6841 3.70422 22.2596C3.37284 21.8196 3.06569 21.3567 2.78363 20.8777C2.12126 19.8135 1.60253 18.6495 1.24356 17.4221C0.810954 15.9946 0.600708 14.6279 0.600708 13.2907C0.600708 11.7986 0.89488 10.4965 1.46765 9.40356C1.89474 8.5472 2.52192 7.83137 3.28459 7.32978C4.02359 6.82627 4.87234 6.55051 5.74179 6.53144C6.04461 6.53144 6.37339 6.57896 6.71948 6.674C6.97039 6.75004 7.27321 6.87359 7.64525 7.02565C8.12112 7.22524 8.38068 7.34879 8.4672 7.3773C8.74407 7.49135 8.97767 7.53887 9.15937 7.53887C9.2978 7.53887 9.4968 7.49135 9.71743 7.41532C9.84289 7.3678 10.0808 7.28226 10.4182 7.12069C10.7522 6.98764 11.017 6.87359 11.2272 6.78805C11.5473 6.68351 11.8571 6.58847 12.1357 6.54095C12.4731 6.48392 12.808 6.46492 13.129 6.49343C13.7433 6.54095 14.3056 6.68351 14.8075 6.8926C15.69 7.28226 16.402 7.89052 16.9333 8.75538C16.7083 8.90745 16.5007 9.08422 16.306 9.2781C15.8846 9.68678 15.5273 10.1715 15.2418 10.7085C14.8707 11.4405 14.6788 12.2656 14.6846 13.1035C14.6976 14.1328 14.9355 15.0375 15.4114 15.8216C15.7579 16.4031 16.2097 16.9 16.7386 17.2814C17.0068 17.481 17.2422 17.6188 17.4654 17.7091C17.3616 18.0655 17.2474 18.4124 17.115 18.7546C16.8147 19.5215 16.4574 20.2562 16.0335 20.95C15.6597 21.5487 15.3655 21.9954 15.1423 22.29C14.7945 22.7462 14.4588 23.0884 14.1214 23.3326C13.7493 23.6035 13.3124 23.747 12.8651 23.747C12.5622 23.7613 12.2594 23.7185 11.9704 23.6263C11.7195 23.536 11.4721 23.4343 11.2298 23.3193C10.976 23.1918 10.7143 23.0838 10.4468 22.9962C10.1181 22.9018 9.7795 22.8548 9.4397 22.8565C9.09361 22.8565 8.75618 22.904 8.43605 22.9943C8.16784 23.0779 7.90827 23.1806 7.65131 23.3032C7.28792 23.4695 7.04999 23.5788 6.91155 23.6263C6.63264 23.717 6.3453 23.7727 6.05499 23.7926C5.60508 23.7926 5.18632 23.6501 4.76929 23.3649L4.78054 23.3526ZM10.7107 5.80819C10.1223 6.13132 9.56342 6.26818 9.00363 6.22256C8.91711 5.6086 9.00363 4.97754 9.23724 4.2866C9.44489 3.69735 9.72176 3.16512 10.1024 2.68992C10.5004 2.19571 10.9763 1.78704 11.5127 1.49242C12.0838 1.16928 12.6289 0.998208 13.148 0.969696C13.2172 1.61597 13.148 2.25274 12.9317 2.93703C12.7326 3.54488 12.4399 4.11067 12.0665 4.60973C11.6901 5.10394 11.2229 5.51261 10.6943 5.80724L10.7107 5.80819Z" fill="#FDFDFD"/>
+                    </g>
+                </svg>                    
+                <span class="font-large">
+                    Se connecter avec Apple
+                </span>
+            </button>
+        </section>
+    </section>
+</body>
+</html>
